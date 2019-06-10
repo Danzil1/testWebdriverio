@@ -63,8 +63,6 @@ describe ('Test homepage', () => {
 
     it('should redirect to Services(QA) page', () => {
         HomePage.clickServices();
-        HomePage.scrollsthepageDown();
-        HomePage.scrollsthepageUp();
     });
 
     it('should redirect to Blog page', () => {
@@ -82,8 +80,7 @@ describe ('Test homepage', () => {
 
     it('should redirect to Careers page', () => {
        HomePage.clickCareers();
-       HomePage.scrollsthepageDown();
-        HomePage.scrollsthepageUp();
+       assert.equal(HomePage.checkcareerstext(), '"Employee happiness generates client\'s success"');
     });
 
     

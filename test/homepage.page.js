@@ -1,5 +1,5 @@
 class Homepage {
-  get scrollDown() { return $('.row.main-quote .col-lg-12 p'); }
+  get scrollDown() { return $('#masthead'); }
   get scrollUp() { return $("#wpfront-scroll-top-container"); }
   get imgSize() { return $('img.attachment-full'); }
   get text() { return $('.row.main-quote .col-lg-12 p'); }
@@ -18,6 +18,7 @@ class Homepage {
   get Careers() { return $('a[href="http://career.sjinnovation.com/"]');}
   get blog() { return $('a[href="https://sjinnovation.com/blog/"]');}
   get contactUs() { return $('a[href="https://sjinnovation.com/contact-us/"]');}
+  get careerstest() { return $('.row .home-title-slogans:nth-child(3)');}
 
 
  	scrollsthepageDown(){
@@ -118,8 +119,12 @@ class Homepage {
 		this.contactUs.click();
 	}
 
+	checkcareerstext() {
+		return this.careerstest.getText();
+	}
+}
 
 
-};
+
 
 module.exports = new Homepage();
