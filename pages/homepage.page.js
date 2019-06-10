@@ -105,6 +105,7 @@ class Homepage {
 	clickServices(){
 		this.dropdown.click();
 		this.QA.click();
+		browser.pause(5000);
 	}
 
 	clickCareers(){

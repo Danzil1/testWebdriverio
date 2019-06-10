@@ -1,4 +1,4 @@
-var HomePage = require('./Homepage.page.js');
+var HomePage = require('../pages/Homepage.page.js');
 const assert= require ('assert');
 
 describe ('Test homepage', () => {
